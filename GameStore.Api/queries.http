@@ -1,0 +1,32 @@
+GET http://localhost:5034/games
+
+###
+GET http://localhost:5034/games/11
+###
+
+GET http://localhost:5034/genres
+###
+POST http://localhost:5034/games
+Content-Type: application/json
+
+{
+    "name": "GTA 4",
+    "genreId": 1,
+    "price": 19.99,
+    "releaseDate": "2013-09-01"
+}
+
+###
+
+PUT http://localhost:5034/games/11
+Content-Type: application/json
+
+{
+    "name": "GTA 4",
+    "genreId": 2,
+    "price": 19.99,
+    "releaseDate": "2013-09-01"
+}
+
+###
+DELETE http://localhost:5034/games/14
